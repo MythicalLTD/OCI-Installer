@@ -22,6 +22,6 @@ cd /var/www/pma
 mkdir tmp
 chmod 777 tmp
 cd /etc/apache2/sites-available
-curl -o pma.conf https://raw.githubusercontent.com/MythicalNodes/OCI-Installer/main/files/pterodactyl.conf
+curl -o pma.conf https://raw.githubusercontent.com/MythicalNodes/OCI-Installer/main/files/pma.conf
 sudo ln -s /etc/apache2/sites-available/pma.conf /etc/apache2/sites-enabled/pma.conf
 echo "DONT FORGET TO CHANGE THE BLOWFISH IN /var/www/pma"
