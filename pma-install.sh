@@ -19,6 +19,7 @@ cd themes
 wget https://files.phpmyadmin.net/themes/darkwolf/5.2/darkwolf-5.2.zip
 unzip darkwolf-5.2.zip
 cd /var/www/pma
+mkdir tmp
 chmod 777 tmp
 cd /etc/apache2/sites-available
 curl -o pma.conf https://raw.githubusercontent.com/MythicalNodes/OCI-Installer/main/files/pterodactyl.conf
