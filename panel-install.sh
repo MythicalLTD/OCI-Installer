@@ -54,7 +54,7 @@ sudo systemctl enable --now pteroq.service
 systemctl stop apache2
 a2enmod rewrite
 a2enmod ssl
-certbot certonly --standalone -d panel.mythicalnodes.xyz
+sudo ln -s /etc/apache2/sites-available/pterodactyl.conf /etc/apache2/sites-enabled/pterodactyl.conf
 systemctl start apache2
 echo "Done installing the panel."
 echo "You have to go to the pterodactyl docs and do the mysql steps and the crontab"
