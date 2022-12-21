@@ -33,7 +33,7 @@ curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 apt update
 sudo apt -y upgrade
 apt-add-repository universe
-apt -y install apache2 php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server tar unzip git redis-server zip certbot libapache2-mod-php 
+apt -y install php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server tar unzip apache2 git redis-server zip certbot libapache2-mod-php 
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 mkdir -p /var/www/pterodactyl
 cd /var/www/pterodactyl
